@@ -1,0 +1,15 @@
+{
+    "device": "RTLSDRBlog Blog V4 [00000001]##0",
+    "devices": {
+        "RTLSDRBlog Blog V4 [00000001]##0": {
+            "biasT": false,
+            "directSampling": 0,
+            "gain": 0,
+            "offsetTuning": false,
+            "ppm": 0,
+            "rtlAgc": false,
+            "sampleRate": 2400000.0,
+            "tunerAgc": false
+        }
+    }
+}

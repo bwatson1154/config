@@ -1,0 +1,103 @@
+{
+    "plugin_settings": {
+        "goes_support": {
+            "last_pdt_update": 0,
+            "update_interval": 14400,
+            "pdt_urls": [
+                "https://dcs1.noaa.gov/PDTS_COMPRESSED.txt",
+                "https://dcs2.noaa.gov/PDTS_COMPRESSED.txt",
+                "https://dcs3.noaa.gov/PDTS_COMPRESSED.txt",
+                "https://dcs4.noaa.gov/PDTS_COMPRESSED.txt"
+            ],
+            "hads_urls": [
+                "https://hads.ncep.noaa.gov/compressed_defs/all_dcp_defs.txt"
+            ]
+        }
+    },
+    "user": {
+        "tles_last_updated": 1751588596,
+        "recorder_state": {
+            "baseband_type": "cf32",
+            "fft_avgn": 10.0,
+            "fft_max": 150.0,
+            "fft_min": -150.0,
+            "fft_rate": 120,
+            "fft_size": 8192,
+            "panel_ratio": 0.20000000298023224,
+            "show_waterfall": true,
+            "waterfall_palette": "Viridis",
+            "waterfall_rate": 60,
+            "waterfall_ratio": 0.699999988079071,
+            "ziq_depth": 8
+        },
+        "viewer_state": {
+            "panel_ratio": 0.23000000417232513,
+            "save_type": "png",
+            "projections": {
+                "projection_auto_mode": false,
+                "projection_auto_scale_mode": false,
+                "projection_autoscale_x": 0.016,
+                "projection_autoscale_y": 0.016,
+                "projections_current_selected_proj": 0,
+                "projections_equirectangular_br_lat": -90.0,
+                "projections_equirectangular_br_lon": 180.0,
+                "projections_equirectangular_tl_lat": 90.0,
+                "projections_equirectangular_tl_lon": -180.0,
+                "projections_image_height": 1024,
+                "projections_image_width": 2048,
+                "projections_mode_radio": 0,
+                "projections_overlay_settings": {
+                    "borders_color": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "cities_color": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "cities_scale": 50,
+                    "cities_scale_rank": 3,
+                    "cities_size": 50,
+                    "cities_type": 0,
+                    "draw_cities_overlay": true,
+                    "draw_latlon_overlay": false,
+                    "draw_map_overlay": true,
+                    "draw_qth_overlay": false,
+                    "draw_shores_overlay": false,
+                    "latlon_color": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "qth_color": [
+                        1.0,
+                        0.0,
+                        1.0
+                    ],
+                    "qth_label": "QTH",
+                    "shores_color": [
+                        1.0,
+                        1.0,
+                        0.0
+                    ]
+                },
+                "projections_stereo_center_lat": 0.0,
+                "projections_stereo_center_lon": 0.0,
+                "projections_stereo_scale": 2400.0,
+                "projections_tpers_alt": 30000000.0,
+                "projections_tpers_ang": 0.0,
+                "projections_tpers_azi": 0.0,
+                "projections_tpers_lat": 0.0,
+                "projections_tpers_lon": 0.0,
+                "projections_tpers_scale": 8000.0,
+                "projections_utm_center_lon": 0.0,
+                "projections_utm_offset_y": 0.0,
+                "projections_utm_scale": 2400.0,
+                "projections_utm_south": false,
+                "projections_utm_zone": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,628 @@
+[00:23:12 - 04/07/2025] (E) Usage : /usr/bin/satdump-ui [downlink] [input_level] [input_file] [output_file_or_directory] [additional options as required]
+[00:23:12 - 04/07/2025] (E) Extra options (examples. Any parameter used in modules can be used here) :
+[00:23:12 - 04/07/2025] (E)  --samplerate [baseband_samplerate] --baseband_format [cf32/cs32/cs16/cs8/wav16] --dc_block --iq_swap
+[00:23:12 - 04/07/2025] (D) Starting with OpenGL 4.6 (Compatibility Profile) Mesa 25.1.4-arch1.1
+[00:23:12 - 04/07/2025] (D) Max texture size: 16384
+[00:23:12 - 04/07/2025] (E) Glfw Error 65548: Wayland: The platform does not support setting the window icon
+[00:23:12 - 04/07/2025] (I)    _____       __  ____                      
+[00:23:12 - 04/07/2025] (I)   / ___/____ _/ /_/ __ \__  ______ ___  ____ 
+[00:23:12 - 04/07/2025] (I)   \__ \/ __ `/ __/ / / / / / / __ `__ \/ __ \
+[00:23:12 - 04/07/2025] (I)  ___/ / /_/ / /_/ /_/ / /_/ / / / / / / /_/ /
+[00:23:12 - 04/07/2025] (I) /____/\__,_/\__/_____/\__,_/_/ /_/ /_/ .___/ 
+[00:23:12 - 04/07/2025] (I)                                     /_/      
+[00:23:12 - 04/07/2025] (I) Starting SatDump v1.2.2-6dae52c
+[00:23:12 - 04/07/2025] (I) 
+[00:23:12 - 04/07/2025] (I) Loading config /usr/share/satdump/satdump_cfg.json
+[00:23:12 - 04/07/2025] (W) No user configuration found! Keeping defaults.
+[00:23:12 - 04/07/2025] (I) Loading plugins from /usr/lib/satdump/plugins
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libelektro_arktika_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin elektro_arktika_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libcpp_compos_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin standard_cpp_compos loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libspacex_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin spacex_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libnet_source_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin network_source_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libaim_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin aim_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/liborbcomm_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin orbcomm_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libmeteosat_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin meteosat_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libaws_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin aws_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libairspy_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin airspy_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libsimd_avx2.so...
+[00:23:12 - 04/07/2025] (T) Plugin simd_avx2 loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libjpss_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin jpss_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libnoaa_metop_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin noaa_metop_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libbluewalker3_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin bluewalker3_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libtubsat_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin tubsat_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libfengyun4_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin fenyun4_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libstereo_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin stereo_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libfengyun3_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin fengyun3_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libhackrf_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin hackrf_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/liblandsat_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin landsat_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libfengyun2_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin fengyun2_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libcluster_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin cluster_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libremote_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin remote_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libothers_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin others_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libspyserver_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin spyserver_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libgcom_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin gcom_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libmirisdr_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin mirisdr_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/liboceansat_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin oceansat_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libwsf_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin wsf_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libanalog_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin analog_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libsimd_sse41.so...
+[00:23:12 - 04/07/2025] (T) Plugin simd_sse41 loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libjason3_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin jason3_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libhimawari_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin himawari_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libgoes_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin goes_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libdvb_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin dvb_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/librtltcp_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin rtltcp_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libusrp_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin usrp_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libplutosdr_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin plutosdr_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libcubesat_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin cubesat_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libumka_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin umka_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libgeonetcast_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin geonetcast_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libmats_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin mats_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libeos_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin eos_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libinmarsat_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin inmarsat_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libbladerf_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin bladerf_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libdscovr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin dscovr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libhinode_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin hinode_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libsdrpp_server_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin spyserver_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libgk2a_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin gk2a_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libdmsp_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin dmsp_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/librtlsdr_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin rtlsdr_sdr_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libportaudio_audio_sink.so...
+[00:23:12 - 04/07/2025] (T) Plugin rtaudio_audio_sink loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libmeteor_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin meteor_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/libproba_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin proba_support loaded!
+[00:23:12 - 04/07/2025] (T) Loading plugin /usr/lib/satdump/plugins/librfnm_sdr_support.so...
+[00:23:12 - 04/07/2025] (T) Plugin rfnm_sdr_support loaded!
+[00:23:12 - 04/07/2025] (D) Loaded plugins (53) : 
+[00:23:12 - 04/07/2025] (D)  - aim_support
+[00:23:12 - 04/07/2025] (D)  - airspy_sdr_support
+[00:23:12 - 04/07/2025] (D)  - analog_support
+[00:23:12 - 04/07/2025] (D)  - aws_support
+[00:23:12 - 04/07/2025] (D)  - bladerf_sdr_support
+[00:23:12 - 04/07/2025] (D)  - bluewalker3_support
+[00:23:12 - 04/07/2025] (D)  - cluster_support
+[00:23:12 - 04/07/2025] (D)  - cubesat_support
+[00:23:12 - 04/07/2025] (D)  - dmsp_support
+[00:23:12 - 04/07/2025] (D)  - dscovr_support
+[00:23:12 - 04/07/2025] (D)  - dvb_support
+[00:23:12 - 04/07/2025] (D)  - elektro_arktika_support
+[00:23:12 - 04/07/2025] (D)  - eos_support
+[00:23:12 - 04/07/2025] (D)  - fengyun2_support
+[00:23:12 - 04/07/2025] (D)  - fengyun3_support
+[00:23:12 - 04/07/2025] (D)  - fenyun4_support
+[00:23:12 - 04/07/2025] (D)  - gcom_support
+[00:23:12 - 04/07/2025] (D)  - geonetcast_support
+[00:23:12 - 04/07/2025] (D)  - gk2a_support
+[00:23:12 - 04/07/2025] (D)  - goes_support
+[00:23:12 - 04/07/2025] (D)  - hackrf_sdr_support
+[00:23:12 - 04/07/2025] (D)  - himawari_support
+[00:23:12 - 04/07/2025] (D)  - hinode_support
+[00:23:12 - 04/07/2025] (D)  - inmarsat_support
+[00:23:12 - 04/07/2025] (D)  - jason3_support
+[00:23:12 - 04/07/2025] (D)  - jpss_support
+[00:23:12 - 04/07/2025] (D)  - landsat_support
+[00:23:12 - 04/07/2025] (D)  - mats_support
+[00:23:12 - 04/07/2025] (D)  - meteor_support
+[00:23:12 - 04/07/2025] (D)  - meteosat_support
+[00:23:12 - 04/07/2025] (D)  - mirisdr_sdr_support
+[00:23:12 - 04/07/2025] (D)  - network_source_support
+[00:23:12 - 04/07/2025] (D)  - noaa_metop_support
+[00:23:12 - 04/07/2025] (D)  - oceansat_support
+[00:23:12 - 04/07/2025] (D)  - orbcomm_support
+[00:23:12 - 04/07/2025] (D)  - others_support
+[00:23:12 - 04/07/2025] (D)  - plutosdr_sdr_support
+[00:23:12 - 04/07/2025] (D)  - proba_support
+[00:23:12 - 04/07/2025] (D)  - remote_sdr_support
+[00:23:12 - 04/07/2025] (D)  - rfnm_sdr_support
+[00:23:12 - 04/07/2025] (D)  - rtaudio_audio_sink
+[00:23:12 - 04/07/2025] (D)  - rtlsdr_sdr_support
+[00:23:12 - 04/07/2025] (D)  - rtltcp_support
+[00:23:12 - 04/07/2025] (D)  - simd_avx2
+[00:23:12 - 04/07/2025] (D)  - simd_sse41
+[00:23:12 - 04/07/2025] (D)  - spacex_support
+[00:23:12 - 04/07/2025] (D)  - spyserver_support
+[00:23:12 - 04/07/2025] (D)  - standard_cpp_compos
+[00:23:12 - 04/07/2025] (D)  - stereo_support
+[00:23:12 - 04/07/2025] (D)  - tubsat_support
+[00:23:12 - 04/07/2025] (D)  - umka_support
+[00:23:12 - 04/07/2025] (D)  - usrp_sdr_support
+[00:23:12 - 04/07/2025] (D)  - wsf_support
+[00:23:12 - 04/07/2025] (D) Registered modules (101) : 
+[00:23:12 - 04/07/2025] (D)  - aim_instruments
+[00:23:12 - 04/07/2025] (D)  - angels_argos
+[00:23:12 - 04/07/2025] (D)  - aqua_db_decoder
+[00:23:12 - 04/07/2025] (D)  - aws_instruments
+[00:23:12 - 04/07/2025] (D)  - ax25_decoder
+[00:23:12 - 04/07/2025] (D)  - bw3_decoder
+[00:23:12 - 04/07/2025] (D)  - ccsds_conv_concat_decoder
+[00:23:12 - 04/07/2025] (D)  - ccsds_ldpc_decoder
+[00:23:12 - 04/07/2025] (D)  - ccsds_simple_psk_decoder
+[00:23:12 - 04/07/2025] (D)  - ccsds_turbo_decoder
+[00:23:12 - 04/07/2025] (D)  - cloudsat_cpr
+[00:23:12 - 04/07/2025] (D)  - cluster_instruments
+[00:23:12 - 04/07/2025] (D)  - coriolis_windsat
+[00:23:12 - 04/07/2025] (D)  - cryosat_siral
+[00:23:12 - 04/07/2025] (D)  - dmsp_rtd_decoder
+[00:23:12 - 04/07/2025] (D)  - dmsp_rtd_instruments
+[00:23:12 - 04/07/2025] (D)  - dscovr_instruments
+[00:23:12 - 04/07/2025] (D)  - dvbs2_demod
+[00:23:12 - 04/07/2025] (D)  - dvbs2_ts_extractor
+[00:23:12 - 04/07/2025] (D)  - dvbs_demod
+[00:23:12 - 04/07/2025] (D)  - elektro_arktika_msugs
+[00:23:12 - 04/07/2025] (D)  - elektro_lrit_data_decoder
+[00:23:12 - 04/07/2025] (D)  - eos_instruments
+[00:23:12 - 04/07/2025] (D)  - falcon_decoder
+[00:23:12 - 04/07/2025] (D)  - fengyun_ahrpt_decoder
+[00:23:12 - 04/07/2025] (D)  - fengyun_mpt_decoder
+[00:23:12 - 04/07/2025] (D)  - fengyun_svissr_decoder
+[00:23:12 - 04/07/2025] (D)  - fengyun_svissr_image_decoder
+[00:23:12 - 04/07/2025] (D)  - fsk_demod
+[00:23:12 - 04/07/2025] (D)  - fy3_instruments
+[00:23:12 - 04/07/2025] (D)  - fy4_lrit_data_decoder
+[00:23:12 - 04/07/2025] (D)  - gcom1_instruments
+[00:23:12 - 04/07/2025] (D)  - generic_analog_demod
+[00:23:12 - 04/07/2025] (D)  - geonetcast_decoder
+[00:23:12 - 04/07/2025] (D)  - geoscan_data_decoder
+[00:23:12 - 04/07/2025] (D)  - geoscan_decoder
+[00:23:12 - 04/07/2025] (D)  - gk2a_lrit_data_decoder
+[00:23:12 - 04/07/2025] (D)  - goes_grb_cadu_extractor
+[00:23:12 - 04/07/2025] (D)  - goes_grb_data_decoder
+[00:23:12 - 04/07/2025] (D)  - goes_gvar_decoder
+[00:23:12 - 04/07/2025] (D)  - goes_gvar_image_decoder
+[00:23:12 - 04/07/2025] (D)  - goes_lrit_data_decoder
+[00:23:12 - 04/07/2025] (D)  - goes_mdl_decoder
+[00:23:12 - 04/07/2025] (D)  - goes_sd_image_decoder
+[00:23:12 - 04/07/2025] (D)  - goesn_sd_decoder
+[00:23:12 - 04/07/2025] (D)  - goesr_instruments
+[00:23:12 - 04/07/2025] (D)  - himawaricast_data_decoder
+[00:23:12 - 04/07/2025] (D)  - hinode_instruments
+[00:23:12 - 04/07/2025] (D)  - inmarsat_aero_decoder
+[00:23:12 - 04/07/2025] (D)  - inmarsat_aero_parser
+[00:23:12 - 04/07/2025] (D)  - inmarsat_stdc_decoder
+[00:23:12 - 04/07/2025] (D)  - inmarsat_stdc_parser
+[00:23:12 - 04/07/2025] (D)  - jason3_instruments
+[00:23:12 - 04/07/2025] (D)  - jpss_instruments
+[00:23:12 - 04/07/2025] (D)  - ldcm_instruments
+[00:23:12 - 04/07/2025] (D)  - lucky7_decoder
+[00:23:12 - 04/07/2025] (D)  - lucky7_demod
+[00:23:12 - 04/07/2025] (D)  - mats_instruments
+[00:23:12 - 04/07/2025] (D)  - meteor_hrpt_decoder
+[00:23:12 - 04/07/2025] (D)  - meteor_instruments
+[00:23:12 - 04/07/2025] (D)  - meteor_lrpt_decoder
+[00:23:12 - 04/07/2025] (D)  - meteor_msumr_lrpt
+[00:23:12 - 04/07/2025] (D)  - meteor_qpsk_kmss_decoder
+[00:23:12 - 04/07/2025] (D)  - meteor_xband_decoder
+[00:23:12 - 04/07/2025] (D)  - meteor_xband_instruments
+[00:23:12 - 04/07/2025] (D)  - metop_ahrpt_decoder
+[00:23:12 - 04/07/2025] (D)  - metop_dump_decoder
+[00:23:12 - 04/07/2025] (D)  - metop_instruments
+[00:23:12 - 04/07/2025] (D)  - msg_instruments
+[00:23:12 - 04/07/2025] (D)  - network_client
+[00:23:12 - 04/07/2025] (D)  - network_server
+[00:23:12 - 04/07/2025] (D)  - noaa_apt_decoder
+[00:23:12 - 04/07/2025] (D)  - noaa_apt_demod
+[00:23:12 - 04/07/2025] (D)  - noaa_dsb_decoder
+[00:23:12 - 04/07/2025] (D)  - noaa_gac_decoder
+[00:23:12 - 04/07/2025] (D)  - noaa_hrpt_decoder
+[00:23:12 - 04/07/2025] (D)  - noaa_instruments
+[00:23:12 - 04/07/2025] (D)  - oceansat2_db_decoder
+[00:23:12 - 04/07/2025] (D)  - oceansat_ocm
+[00:23:12 - 04/07/2025] (D)  - orb_decoder_test
+[00:23:12 - 04/07/2025] (D)  - orbcomm_plotter
+[00:23:12 - 04/07/2025] (D)  - orbcomm_stx_auto_demod
+[00:23:12 - 04/07/2025] (D)  - orbcomm_stx_demod
+[00:23:12 - 04/07/2025] (D)  - pm_demod
+[00:23:12 - 04/07/2025] (D)  - proba_instruments
+[00:23:12 - 04/07/2025] (D)  - products_processor
+[00:23:12 - 04/07/2025] (D)  - psk_demod
+[00:23:12 - 04/07/2025] (D)  - s2_udp_cadu_extractor
+[00:23:12 - 04/07/2025] (D)  - saral_argos
+[00:23:12 - 04/07/2025] (D)  - scisat1_instruments
+[00:23:12 - 04/07/2025] (D)  - sdpsk_demod
+[00:23:12 - 04/07/2025] (D)  - soft2hard
+[00:23:12 - 04/07/2025] (D)  - spacex_tlm_decoder
+[00:23:12 - 04/07/2025] (D)  - spino_decoder
+[00:23:12 - 04/07/2025] (D)  - stereo_instruments
+[00:23:12 - 04/07/2025] (D)  - terra_db_demod
+[00:23:12 - 04/07/2025] (D)  - tubin_decoder
+[00:23:12 - 04/07/2025] (D)  - umka1_decoder
+[00:23:12 - 04/07/2025] (D)  - wsfm_instruments
+[00:23:12 - 04/07/2025] (D)  - xfsk_burst_demod
+[00:23:12 - 04/07/2025] (D)  - xrit_goesrecv_publisher
+[00:23:12 - 04/07/2025] (I) Loading system pipelines from /usr/share/satdump/pipelines
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/DVB_Test.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Proba.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/IM-1.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/GCOM.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Chandrayaan.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/MetOp.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Psyche.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Sonate-2.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/TGO.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Geoscan.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/SAOCOM.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Cosmos.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Work-In-Progress.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Lucky7.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Cluster.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/DSCOVR.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/SpaceX.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Test.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Hera.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/KPLO.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/GK2A.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Iris.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/JPSS.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Peregrine.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Hinode.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Juice.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/DMSP.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/GeoNetCast.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/BlueWalker3.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Stereo.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/GOES.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Meteor-M.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Insat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Orbcomm.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/NOAA.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Sentinel-6.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Orion.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/AIM.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/FengYun-4.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/MATS.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Coriolis.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/ACE.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/EOS.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/VERONIKA.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Jason-3.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/MSG.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/ORX.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Queqiao.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Elektro_Arktika.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/ODIN.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Himawari.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/TUBSAT.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/ViaSat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/FengYun-2.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Inmarsat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/WSF-M.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Others.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Integral.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Tianwen.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/LandSat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/UmKA.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/FengYun-3.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Oceansat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/FORMOSAT.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Cryosat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/AWS.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/XMM-Newton.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Aditya.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/SLIM.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/Cloudsat.json
+[00:23:12 - 04/07/2025] (T) Found system pipeline file /usr/share/satdump/pipelines/UVSQ.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/ACE.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/AIM.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/AWS.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Aditya.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/BlueWalker3.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Chandrayaan.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Cloudsat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Cluster.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Coriolis.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Cosmos.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Cryosat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/DMSP.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/DSCOVR.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/DVB_Test.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/EOS.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Elektro_Arktika.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/FORMOSAT.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/FengYun-2.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/FengYun-3.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/FengYun-4.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/GCOM.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/GK2A.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/GOES.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/GeoNetCast.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Geoscan.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Hera.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Himawari.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Hinode.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/IM-1.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Inmarsat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Insat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Integral.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Iris.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/JPSS.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Jason-3.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Juice.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/KPLO.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/LandSat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Lucky7.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/MATS.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/MSG.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/MetOp.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Meteor-M.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/NOAA.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/ODIN.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/ORX.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Oceansat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Orbcomm.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Orion.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Others.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Peregrine.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Proba.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Psyche.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Queqiao.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/SAOCOM.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/SLIM.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Sentinel-6.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Sonate-2.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/SpaceX.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Stereo.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/TGO.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/TUBSAT.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Test.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Tianwen.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/UVSQ.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/UmKA.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/VERONIKA.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/ViaSat.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/WSF-M.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/Work-In-Progress.json
+[00:23:12 - 04/07/2025] (I) Loading pipelines from file /usr/share/satdump/pipelines/XMM-Newton.json
+[00:23:12 - 04/07/2025] (W) Module off2pro is not loaded. Skipping pipeline!
+[00:23:12 - 04/07/2025] (D) Registered pipelines :
+[00:23:12 - 04/07/2025] (D)  - ace_s_link
+[00:23:12 - 04/07/2025] (D)  - adityal1_tlm_link
+[00:23:12 - 04/07/2025] (D)  - aeolus_dump
+[00:23:12 - 04/07/2025] (D)  - aim_dump
+[00:23:12 - 04/07/2025] (D)  - spino_2400
+[00:23:12 - 04/07/2025] (D)  - angels_l_band
+[00:23:12 - 04/07/2025] (D)  - aqua_db
+[00:23:12 - 04/07/2025] (D)  - arktika_ggak
+[00:23:12 - 04/07/2025] (D)  - arktika_rdas
+[00:23:12 - 04/07/2025] (D)  - aura_db
+[00:23:12 - 04/07/2025] (D)  - aws_pfm
+[00:23:12 - 04/07/2025] (D)  - bluewalker3_narrow
+[00:23:12 - 04/07/2025] (D)  - bluewalker3_wide
+[00:23:12 - 04/07/2025] (D)  - CALIPSO
+[00:23:12 - 04/07/2025] (D)  - cfosat1_dump
+[00:23:12 - 04/07/2025] (D)  - chandrayaan3_link_1k
+[00:23:12 - 04/07/2025] (D)  - chandrayaan3_link_2k
+[00:23:12 - 04/07/2025] (D)  - chandrayaan3_link_4k
+[00:23:12 - 04/07/2025] (D)  - chandrayaan3_link_8k
+[00:23:12 - 04/07/2025] (D)  - cheops_link
+[00:23:12 - 04/07/2025] (D)  - chinese_spaceplane_sband
+[00:23:12 - 04/07/2025] (D)  - cloudsat_link
+[00:23:12 - 04/07/2025] (D)  - cluster_hr_link
+[00:23:12 - 04/07/2025] (D)  - cluster_lr_link
+[00:23:12 - 04/07/2025] (D)  - colibri_s_uhf
+[00:23:12 - 04/07/2025] (D)  - coriolis_db
+[00:23:12 - 04/07/2025] (D)  - cosmos_2558_dump
+[00:23:12 - 04/07/2025] (D)  - cosmos_2518_sband
+[00:23:12 - 04/07/2025] (D)  - crew_dragon_tlm
+[00:23:12 - 04/07/2025] (D)  - cryosat_dump
+[00:23:12 - 04/07/2025] (D)  - dmsp_rtd
+[00:23:12 - 04/07/2025] (D)  - dscovr_hr
+[00:23:12 - 04/07/2025] (D)  - dscovr_tlm
+[00:23:12 - 04/07/2025] (D)  - dvbs_test
+[00:23:12 - 04/07/2025] (D)  - dvbs2_test
+[00:23:12 - 04/07/2025] (D)  - elektro_ggak
+[00:23:12 - 04/07/2025] (D)  - elektro_hrit
+[00:23:12 - 04/07/2025] (D)  - elektro_lrit
+[00:23:12 - 04/07/2025] (D)  - elektro_rdas
+[00:23:12 - 04/07/2025] (D)  - eumetcast_africa
+[00:23:12 - 04/07/2025] (D)  - falcon9_tlm
+[00:23:12 - 04/07/2025] (D)  - fengyun_svissr
+[00:23:12 - 04/07/2025] (D)  - fengyun3_ab_ahrpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_abc_dpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_abc_mpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_c_ahrpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_d_ahrpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_d_dpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_e_ahrpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_e_dpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_f_ahrpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_f_dpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_g_ahrpt
+[00:23:12 - 04/07/2025] (D)  - fengyun3_tlm_old
+[00:23:12 - 04/07/2025] (D)  - fengyun3_tlm
+[00:23:12 - 04/07/2025] (D)  - fengyun4_a_hrit23
+[00:23:12 - 04/07/2025] (D)  - fengyun4_a_lrit
+[00:23:12 - 04/07/2025] (D)  - fengyun4_b_lrit
+[00:23:12 - 04/07/2025] (D)  - formosat5_s_dump
+[00:23:12 - 04/07/2025] (D)  - formosat7_s_dump
+[00:23:12 - 04/07/2025] (D)  - gcom_s_band
+[00:23:12 - 04/07/2025] (D)  - gcom_c1_link
+[00:23:12 - 04/07/2025] (D)  - gcom_w1_link
+[00:23:12 - 04/07/2025] (D)  - generic_analog_demod
+[00:23:12 - 04/07/2025] (D)  - geonetcast
+[00:23:12 - 04/07/2025] (D)  - gfsk_test
+[00:23:12 - 04/07/2025] (D)  - gk2a_cdas
+[00:23:12 - 04/07/2025] (D)  - gk2a_hrit
+[00:23:12 - 04/07/2025] (D)  - gk2a_lrit
+[00:23:12 - 04/07/2025] (D)  - gk2a_lrit_tcp
+[00:23:12 - 04/07/2025] (D)  - goes_gvar
+[00:23:12 - 04/07/2025] (D)  - goesn_cda
+[00:23:12 - 04/07/2025] (D)  - goes_lrit
+[00:23:12 - 04/07/2025] (D)  - goes_mdl
+[00:23:12 - 04/07/2025] (D)  - goesn_sd
+[00:23:12 - 04/07/2025] (D)  - goesn_sounder
+[00:23:12 - 04/07/2025] (D)  - goesr_cda
+[00:23:12 - 04/07/2025] (D)  - goesr_cda_4k
+[00:23:12 - 04/07/2025] (D)  - goes_grb
+[00:23:12 - 04/07/2025] (D)  - goes_hrit
+[00:23:12 - 04/07/2025] (D)  - goes_hrit_tcp
+[00:23:12 - 04/07/2025] (D)  - goesr_raw
+[00:23:12 - 04/07/2025] (D)  - grace_fo_link
+[00:23:12 - 04/07/2025] (D)  - hera_x_link
+[00:23:12 - 04/07/2025] (D)  - himawaricast
+[00:23:12 - 04/07/2025] (D)  - hinode_s_dump
+[00:23:12 - 04/07/2025] (D)  - hinode_s_tlm
+[00:23:12 - 04/07/2025] (D)  - horizon_uhf
+[00:23:12 - 04/07/2025] (D)  - im1_s_tlm
+[00:23:12 - 04/07/2025] (D)  - inmarsat_aero_6
+[00:23:12 - 04/07/2025] (D)  - inmarsat_aero_12
+[00:23:12 - 04/07/2025] (D)  - inmarsat_aero_105
+[00:23:12 - 04/07/2025] (D)  - inmarsat_aero_84
+[00:23:12 - 04/07/2025] (D)  - inmarsat_std_c
+[00:23:12 - 04/07/2025] (D)  - insat_3d_imager
+[00:23:12 - 04/07/2025] (D)  - inspiresat7_tlm
+[00:23:12 - 04/07/2025] (D)  - integral_s_link
+[00:23:12 - 04/07/2025] (D)  - iris_s_dump
+[00:23:12 - 04/07/2025] (D)  - iris_dump
+[00:23:12 - 04/07/2025] (D)  - jason3_link
+[00:23:12 - 04/07/2025] (D)  - jpss_hrd
+[00:23:12 - 04/07/2025] (D)  - jpss_tlm
+[00:23:12 - 04/07/2025] (D)  - juice_x_link
+[00:23:12 - 04/07/2025] (D)  - kplo_sband_link
+[00:23:12 - 04/07/2025] (D)  - landsat_ldcm_tlm
+[00:23:12 - 04/07/2025] (D)  - landsat_ldcm_link
+[00:23:12 - 04/07/2025] (D)  - lucky7_link
+[00:23:12 - 04/07/2025] (D)  - tgo_link
+[00:23:12 - 04/07/2025] (D)  - mats_dump
+[00:23:12 - 04/07/2025] (D)  - meteor_hrpt
+[00:23:12 - 04/07/2025] (D)  - meteor_m2_lrpt
+[00:23:12 - 04/07/2025] (D)  - meteor_m2-x_lrpt
+[00:23:12 - 04/07/2025] (D)  - meteor_m2-x_lrpt_80k
+[00:23:12 - 04/07/2025] (D)  - meteor_m_kmss_bpsk_db
+[00:23:12 - 04/07/2025] (D)  - meteor_m_kmss_qpsk_dump
+[00:23:12 - 04/07/2025] (D)  - meteor_m_mtvza_dump
+[00:23:12 - 04/07/2025] (D)  - metop_ahrpt
+[00:23:12 - 04/07/2025] (D)  - metop_dump
+[00:23:12 - 04/07/2025] (D)  - msg_raw
+[00:23:12 - 04/07/2025] (D)  - neossat_dump
+[00:23:12 - 04/07/2025] (D)  - noaa_apt
+[00:23:12 - 04/07/2025] (D)  - noaa_dsb
+[00:23:12 - 04/07/2025] (D)  - noaa_gac
+[00:23:12 - 04/07/2025] (D)  - noaa_hrpt
+[00:23:12 - 04/07/2025] (D)  - oceansat2_db
+[00:23:12 - 04/07/2025] (D)  - oceansat3_argos
+[00:23:12 - 04/07/2025] (D)  - oceansat3_dump
+[00:23:12 - 04/07/2025] (D)  - odin_dump
+[00:23:12 - 04/07/2025] (D)  - ominous_orb
+[00:23:12 - 04/07/2025] (D)  - ops_sat_s_link
+[00:23:12 - 04/07/2025] (D)  - orbcomm_stx
+[00:23:12 - 04/07/2025] (D)  - orbcomm_stx_auto
+[00:23:12 - 04/07/2025] (D)  - orbcomm_stx_auto_plotter
+[00:23:12 - 04/07/2025] (D)  - orion_link
+[00:23:12 - 04/07/2025] (D)  - orx_link
+[00:23:12 - 04/07/2025] (D)  - gazelle_l_band
+[00:23:12 - 04/07/2025] (D)  - paz_s_tlm
+[00:23:12 - 04/07/2025] (D)  - peregrine_x_tlm
+[00:23:12 - 04/07/2025] (D)  - pretty_s_dump
+[00:23:12 - 04/07/2025] (D)  - prisma_dump
+[00:23:12 - 04/07/2025] (D)  - proba1_dump
+[00:23:12 - 04/07/2025] (D)  - proba2_dump
+[00:23:12 - 04/07/2025] (D)  - probav_s_dump
+[00:23:12 - 04/07/2025] (D)  - probav_x_dump
+[00:23:12 - 04/07/2025] (D)  - pvcc_s_dump
+[00:23:12 - 04/07/2025] (D)  - pvcc_x_dump
+[00:23:12 - 04/07/2025] (D)  - psyche_hr
+[00:23:12 - 04/07/2025] (D)  - queqiao2_bpsk_science_s_link
+[00:23:12 - 04/07/2025] (D)  - queqiao2_oqpsk_science_s_link
+[00:23:12 - 04/07/2025] (D)  - queqiao2_s_link
+[00:23:12 - 04/07/2025] (D)  - rtumirea1_uhf
+[00:23:12 - 04/07/2025] (D)  - saocom_1ab_tlm_dump
+[00:23:12 - 04/07/2025] (D)  - saral_l_band
+[00:23:12 - 04/07/2025] (D)  - scisat1_dump
+[00:23:12 - 04/07/2025] (D)  - sentinel6_tlm
+[00:23:12 - 04/07/2025] (D)  - sentinel6_dump
+[00:23:12 - 04/07/2025] (D)  - slim_tlm_link
+[00:23:12 - 04/07/2025] (D)  - smap_s_link
+[00:23:12 - 04/07/2025] (D)  - smos_tlm
+[00:23:12 - 04/07/2025] (D)  - smos_dump
+[00:23:12 - 04/07/2025] (D)  - sonate2_dump
+[00:23:12 - 04/07/2025] (D)  - starship_tlm
+[00:23:12 - 04/07/2025] (D)  - stereo_hr
+[00:23:12 - 04/07/2025] (D)  - stereo_lr
+[00:23:12 - 04/07/2025] (D)  - stratosat_tk1_uhf
+[00:23:12 - 04/07/2025] (D)  - npp_hrd
+[00:23:12 - 04/07/2025] (D)  - swot_tlm
+[00:23:12 - 04/07/2025] (D)  - syracuse3b_tlm
+[00:23:12 - 04/07/2025] (D)  - terra_db
+[00:23:12 - 04/07/2025] (D)  - test_custom
+[00:23:12 - 04/07/2025] (D)  - tiahne1_tlm
+[00:23:12 - 04/07/2025] (D)  - tianwen1_link
+[00:23:12 - 04/07/2025] (D)  - timed_dump
+[00:23:12 - 04/07/2025] (D)  - tubin_x_dump
+[00:23:12 - 04/07/2025] (D)  - tusur_go_uhf
+[00:23:12 - 04/07/2025] (D)  - umka_1_dump
+[00:23:12 - 04/07/2025] (D)  - veronika_link
+[00:23:12 - 04/07/2025] (D)  - viasat3_tlm_12200
+[00:23:12 - 04/07/2025] (D)  - viasat3_tlm
+[00:23:12 - 04/07/2025] (D)  - vizard_ion_uhf
+[00:23:12 - 04/07/2025] (D)  - wsf_m_db
+[00:23:12 - 04/07/2025] (D)  - xmm_newton_s_link
+[00:23:12 - 04/07/2025] (D)  - youthsat_dump
+[00:23:12 - 04/07/2025] (D)  - yunhai_ahrpt
+[00:23:12 - 04/07/2025] (I) Found OpenCL Devices (0) :
+[00:23:12 - 04/07/2025] (I) Loading TLEs from /home/bwats/.config/satdump/satdump_tles.txt
+[00:23:12 - 04/07/2025] (I) 0 TLEs loaded!
+[00:23:12 - 04/07/2025] (D) Device File Source
+[00:23:12 - 04/07/2025] (D) Device Network Source
+[00:23:12 - 04/07/2025] (D) Device PlutoSDR IP
+[00:23:12 - 04/07/2025] (D) Device RTL-TCP
+[00:23:12 - 04/07/2025] (D) Device SDR++ Server
+[00:23:12 - 04/07/2025] (D) Device SpyServer
+[00:23:12 - 04/07/2025] (T) FFT Rate 8333, Samplerate 1000000, Final Size 8192, Skip 141
+[00:23:12 - 04/07/2025] (I) http://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle
+[00:23:15 - 04/07/2025] (I) http://www.celestrak.org/NORAD/elements/gp.php?CATNR=29499
+[00:23:16 - 04/07/2025] (I) http://www.celestrak.org/NORAD/elements/gp.php?CATNR=35865
+[00:23:16 - 04/07/2025] (I) Saving user config at /home/bwats/.config/satdump/settings.json
+[00:23:16 - 04/07/2025] (I) 12036 TLEs loaded!
+[00:23:25 - 04/07/2025] (I) Saving user config at /home/bwats/.config/satdump/settings.json
+[00:23:25 - 04/07/2025] (I) UI Exit
+[00:23:25 - 04/07/2025] (I) Exiting!

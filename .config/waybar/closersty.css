@@ -1,0 +1,127 @@
+* {
+    border: none;
+    border-radius: 5;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: 500;
+    font-size: 16px;
+}
+
+window#waybar {
+    background: #110d0f;
+    border: 2px solid #110d0f;
+}
+
+#clock,
+#tray,
+#cpu,
+#temperature,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#power-profiles-daemon,
+#power,
+
+#workspaces {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #d3a400;
+    border-radius: 5;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    border-radius: 5;
+    padding: 0px 5px 0px 5px;
+    color: #d3a400;
+}
+
+#workspaces button.focused {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #d3a400;
+    border-radius: 5;
+    color: #d3a400;
+}
+
+#clock {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #d3a400;
+    border-radius: 5;
+    color: #d3a400;
+}
+
+#window {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #d08e01;
+    border-radius: 5;
+    color: #d08e01;
+}
+
+#idle_inhibitor {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #cd7703;
+    border-radius: 5;
+    color: #cd7703;
+}
+
+#idle_inhibitor.activated {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #cd7703;
+    border-radius: 5;
+    background-color: #cd7703;
+    color: #110d0f;
+}
+
+#tray {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #cd7703;
+    border-radius: 5;
+    color: #cd7703;
+}
+
+#pulseaudio {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #ca6104;
+    border-radius: 5;
+    color: #ca6104;
+}
+
+#cpu {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+	border: 2px solid #ca6104;
+    border-radius: 5;
+	color: #ca6104;
+}
+
+#backlight {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #c74b05;
+    border-radius: 5;
+    color: #c74b05;
+}
+
+#battery {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid #c74b05;
+    border-radius: 5;
+    color: #c74b05;
+}
+
+#temperature {
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+	border: 2px solid #c74b05;
+    border-radius: 5;
+	color: #c74b05;
+}

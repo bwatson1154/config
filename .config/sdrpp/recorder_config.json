@@ -1,0 +1,7 @@
+{
+    "Recorder": {
+        "audioVolume": 1.0,
+        "ignoreSilence": false,
+        "stereo": true
+    }
+}

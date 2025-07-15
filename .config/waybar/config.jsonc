@@ -1,0 +1,113 @@
+{
+    "spacing": 6,
+
+    "modules-left": [
+        "idle_inhibitor",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "temperature",
+        "cpu",
+        "custom/nvidia",
+        "memory",
+        "network",
+        "wireplumber",
+        "backlight",
+        "battery",
+        "custom/power"
+    ],
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "tooltip": true,
+        "min-length": 3
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "sort-by-number": true,
+        "tooltip": false
+    },
+
+    "clock": {
+        "interval": 60,
+        "tooltip": false,
+        "format": "{:%H:%M  %Y-%m-%d}"
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+    "temperature": {
+        "format": "temp {temperatureC}°C",
+        "tooltip": false,
+        "min-length": 11
+    },
+    "cpu": {
+        "format": "cpu {}%",
+        "min-length": 12,
+        "interval": 2,
+        "tooltip": false
+    },
+    "custom/nvidia": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,nounits,noheader | sed 's/\\([0-9]\\+\\), \\([0-9]\\+\\)/\\1%/g'",
+        "format": "gpu {}%",
+        "interval": 2,
+        "min-length": 9,
+        "tooltip": false
+    },
+    "memory": {
+        "interval": 5,
+        "format": "mem {}%",
+        "min-length": 9,
+        "tooltip": false
+    },
+    "network": {
+        "format": "wifi {bandwidthDownBits}",
+        "interval": 2,
+        "min-length": 15,
+        "tooltip": false
+    },
+    "wireplumber": {
+        "format": "vol {volume}%",
+        "format-muted": "muted",
+        "on-click": "pavucontrol",
+        "min-length": 9,
+        "tooltip": false,
+        "scroll-step": 1
+    },
+    "backlight": {
+        "device": "amdgpu_bl2",
+        "format": "bl {percent}%",
+        "on-scroll-up": "brightnessctl s +1%",
+        "on-scroll-down": "brightnessctl s 1%-",
+        "tooltip": true,
+        "tooltip-format": "backlight",
+        "min-length": 8
+    },
+    "battery": {
+        "format": "batt {capacity}%",
+        "min-length": 10
+    },
+    "custom/power": {
+        "format" : "⏻",
+		"tooltip": false,
+        "min-length": 3,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+    }
+}

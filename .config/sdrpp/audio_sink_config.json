@@ -1,0 +1,9 @@
+{
+    "Radio": {
+        "device": "Scarlett 2i2 USB (USB Audio)",
+        "devices": {
+            "Default ALSA Device": 48000,
+            "Scarlett 2i2 USB (USB Audio)": 48000
+        }
+    }
+}

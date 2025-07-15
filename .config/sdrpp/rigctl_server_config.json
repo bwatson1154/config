@@ -1,0 +1,11 @@
+{
+    "Rigctl Server": {
+        "autoStart": true,
+        "host": "localhost",
+        "port": 4532,
+        "recorder": "",
+        "recording": false,
+        "tuning": true,
+        "vfo": ""
+    }
+}

@@ -1,0 +1,92 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    border-radius: 5;
+}
+
+tooltip {
+    background-color: #110d0f;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#idle_inhibitor {
+    border: 2px solid #d3a400;
+    color: #d3a400;
+    padding-right: 4px;
+}
+
+#workspaces {
+    border: 2px solid #d08e01;
+    color: #d08e01;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    padding: 0px 4px 0px 4px;
+    color: #d08e01;
+}
+
+#workspaces button.active {
+    background-color: #d08e01;
+    color: #110d0f;
+}
+
+#clock {
+    border: 2px solid #d08e01;
+    color: #d08e01;
+    padding: 0px 4px 0px 4px;
+}
+
+#tray {
+    border: 2px solid #cd7703;
+    padding: 0px 4px 0px 4px;
+}
+
+#temperature {
+    border: 2px solid #ca6104;
+    color: #ca6104;
+}
+
+#cpu {
+    border: 2px solid #ca6104;
+    color: #ca6104;
+}
+
+#custom-nvidia {
+    border: 2px solid #c74b05;
+    color: #c74b05;
+}
+
+#memory {
+    border: 2px solid #c43506;
+    color: #c43506;
+}
+
+#network {
+    border: 2px solid #c11e08;
+    color: #c11e08;
+}
+
+#wireplumber {
+    border: 2px solid #be0809;
+    color: #be0809;
+}
+
+#backlight {
+    border: 2px solid #a5090a;
+    color: #a5090a;
+}
+
+#battery {
+    border: 2px solid #8d090b;
+    color: #8d090b;
+}
+
+#custom-power {
+    border: 2px solid #740a0c;
+    color: #740a0c;
+}
